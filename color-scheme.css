@@ -1,0 +1,142 @@
+html {
+  --primary: #000000;
+  --secondary: #667781;
+  --background-default: #fff;
+  --default-background: #fff;
+  --secondary-background-color: #ededed;
+  --extradata-bg-color: #f1f1f1;
+  --extradata-input-color: #dbdbdb;
+  --thread-bg-color: #fff;
+  --blueticks-panel-background: #ededed;
+  --button-background-color: #dfdfdf;
+  --button-hovered-color: #dddddd;
+  --text-color: #7a7a7a;
+  --hovered-text-color: #7a7a7a;
+  --input-color: #ffff;
+  --border-color: #d1d1d1;
+  --border-color-two: #f2f2f2;
+  --task-panel-bg-color: #fff;
+  --task-background-color: #fff;
+  --unset-task-bg-color: #dfdfdf;
+  --unset-task-value-color: #919191;
+  --task-hover-color: #eee;
+  --box-shadow-color: #808080;
+  --shadow-default-color: #bdbdbd;
+  --task-value-hover-color: #546fff;
+  --overlay-actions-bg-color: #e0e0e0;
+  --light-to-dark-color: #ffff;
+  /*add task input */
+  --input-focus-color: #546fff;
+  --lighter-dark-color: #fff;
+  --gray-to-lighter-dark: #d3d3d3;
+
+  /*complete details bar*/
+  --login-button-bg-color: #ffffff;
+  /*boards-panel*/
+  --aside-navigation-color: #bbbbbb;
+  --toggeable-navigation-color: #eee;
+  --toggle-button-bg-color: #fff;
+  --toggle-button-otline-color: transparent;
+  --active-format-color: #e2e6ea;
+  --board-list-item-bg-color: #bac3f838;
+  --board-list-item-active-bg-color: #8999f5;
+  --board-list-item-active-color: #fff;
+  /*overlay actions*/
+  --clockBD-color: #646464;
+  --arrow-bg-color: #f7f7f7;
+
+  --col-item-hover-bg: #ddd;
+  --col-item-bd-color: #c7c6c6;
+  --panel-header-background: #ffffff;
+
+  --snippets-background-color: #f0f0f0;
+  --snippets-search-background-color: #69696926;
+  --snippets-add-btn: #546eff;
+
+  --snippet-item-background-color: dimgray;
+  --snippet-item-color: white;
+  --snippet-item-btn-color: #111b21;
+
+  --snippet-btn-color: #687fff;
+  --snippet-btn-background-color: #f2f4ff;
+  --snippet-field-bg-color: #e2e2e3;
+  --snippet-btn-bg-secondary: #f2f4ff;
+  --snippet-orange-btn: #eb5757;
+  --snippet-start-icon-color: #687ffd;
+  --snippet-send-msg-color: #546fff;
+  --snippet-btn-selection-color: #303030;
+  --snippet-btn-selection-bg: #f8f8fa;
+  --snippet-lean-icon: #e2e2e3;
+  --snippet-new-color: white;
+  --snippet-label-color: #d1d7db;
+
+  transition: 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+  --bt-button-text-disabled: var(--secondary);
+  --very-light-gray: #ebebeb;
+  --link-preview-background: rgba(255, 255, 255, 0.5);
+}
+
+.dark {
+  --primary: #d1d7db;
+  --secondary: #8696a0;
+  --background-default: #131c21;
+  --default-background: #131c21;
+  --shadow-default-color: #000000;
+  --secondary-background-color: #323739;
+  --blueticks-panel-background: #2a2f32;
+  --button-background-color: #323739;
+  --button-hovered-color: #42484a;
+  --text-color: #cfcfcf;
+  --extradata-bg-color: #323739;
+  --extradata-input-color: #3e4345;
+  --thread-bg-color: #323739;
+  --text-color: #dfdfdf;
+  --hovered-text-color: #7a7a7a;
+  --input-color: #131c21;
+  --border-color: #323a3a;
+  --border-color-two: #101313;
+  --task-panel-bg-color: #111;
+  --task-background-color: #262d31;
+  --unset-task-bg-color: #4e565b;
+  --unset-task-value-color: #fff;
+  --task-hover-color: #3c4346c5;
+  --box-shadow-color: #131c21;
+  --task-value-hover-color: #fff;
+  --overlay-actions-bg-color: #4e565b;
+  --light-to-dark-color: #323739;
+  /*add task input */
+  --input-focus-color: #546fff;
+  --lighter-dark-color: #383d3e;
+  --gray-to-lighter-dark: #383d3e;
+  --panel-header-background: #202c33;
+
+  /*complete details bar*/
+  --login-button-bg-color: #131c21;
+  /*boards-panel*/
+  --board-list-item-bg-color: #bac3f817;
+  --board-list-item-active-bg-color: #8999f54b;
+  --board-list-item-active-color: #fff;
+  --aside-navigation-color: #131c21;
+  --toggeable-navigation-color: #323739;
+  --toggle-button-bg-color: #323739;
+  --toggle-button-otline-color: #8999f54b;
+  --active-format-color: #42484a;
+  /*overlay actions*/
+  --clockBD-color: #cfcfcf;
+  --arrow-bg-color: #2e3436;
+
+  --col-item-hover-bg: #585e61;
+  --col-item-bd-color: #c7c6c6;
+
+  --snippets-background-color: #2c2e2f;
+  --snippet-titles-color: white;
+  --snippet-field-bg-color: #f8f8fa;
+  --snippet-input-color: #d1d7db;
+
+  transition: 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+  --bt-button-text-disabled: var(--secondary);
+  --very-light-gray: #ebebeb;
+  --link-preview-background: rgba(0, 0, 0, 0.5);
+}

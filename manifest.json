@@ -1,0 +1,64 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "name": "Blueticks",
+  "version": "4.2.7",
+  "description": "Manage tasks, send personalized message campaigns, schedule future message - the ultimate whatsapp tool for managers",
+  "manifest_version": 3,
+  "permissions": [
+    "storage",
+    "unlimitedStorage",
+    "scripting",
+    "identity",
+    "identity.email"
+  ],
+  "host_permissions": [
+    "https://web.whatsapp.com/*",
+    "https://blueticks.co/*",
+    "https://app.blueticks.co/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "externally_connectable": {
+    "ids": ["elmlpmbhicpdnbpnicbmgjhbolmlfmnf"],
+    "matches": [
+      "https://blueticks.co/*",
+      "https://app.blueticks.co/*",
+      "https://web.whatsapp.com/*"
+    ],
+    "accepts_tls_channel_id": false
+  },
+  "action": {
+    "default_icon": {
+      "16": "img/logo.png",
+      "48": "img/logo.png",
+      "128": "img/logo.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "js": ["app.js"],
+      "css": ["color-scheme.css"],
+      "all_frames": false,
+      "matches": [
+        "*://web.whatsapp.com/*",
+        "*://whatsapp-scheduler.com/*",
+        "*://blueticks.co/*",
+        "*://app.blueticks.co/*"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["page.js", "img/*", "app.js.map"],
+      "matches": [
+        "*://web.whatsapp.com/*",
+        "*://whatsapp-scheduler.com/*",
+        "*://blueticks.co/*",
+        "*://app.blueticks.co/*"
+      ]
+    }
+  ]
+}
